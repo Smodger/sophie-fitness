@@ -4,14 +4,13 @@ angular.module('fitnessApp')
 .controller('BlogsShowController', BlogsShowController)
 .controller('BlogsEditController', BlogsEditController);
 
-
-
 BlogsIndexController.$inject = ['Blog'];
 function BlogsIndexController(Blog) {
   const blogsIndex = this;
 
   blogsIndex.all = Blog.query();
 }
+
 BlogsNewController.$inject = ['Blog', '$state'];
 function BlogsNewController(Blog, $state) {
   const blogsNew = this;
@@ -24,7 +23,6 @@ function BlogsNewController(Blog, $state) {
     });
   }
   blogsNew.create = create;
-
 }
 
 BlogsShowController.$inject = ['Blog', '$state'];
