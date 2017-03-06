@@ -1,0 +1,12 @@
+<section>
+  <h1>All Blogs</h1>
+  <ul class="row">
+    <li ng-repeat="blog in blogsIndex.all" class="four columns">
+      <a ui-sref="blogsShow({ id: blog._id })">
+        <img ng-src="{{ blog.image }}" class="u-max-full-width">
+        <h2>{{ blog.title }}</h2>
+        <h4>{{ blog.author }}</h4>
+      </a>
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,18 @@
+<section class="row">
+  <form ng-submit="blogsNew.create()">
+    <div class="twelve columns">
+      <label>Title</label>
+      <input type="text" name="title" placeholder="Title" ng-model="blogsNew.blog.title" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Author</label>
+      <input type="text" name="author" placeholder="Author" ng-model="blogsNew.blog.author" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Image</label>
+      <input type="text" name="Image" placeholder="Image" ng-model="blogsNew.blog.image" class="u-full-width">
+    </div>
+
+    <button>Create</button>
+  </form>
+</section>
