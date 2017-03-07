@@ -1,4 +1,4 @@
-angular.module('fitness')
+angular.module('fitnessApp')
   .controller('UsersIndexController', UsersIndexController)
   .controller('UsersShowController', UsersShowController)
   .controller('UsersEditController', UsersEditController);

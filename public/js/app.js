@@ -1,5 +1,4 @@
-angular
-.module('fitnessApp', ['ngResource', 'ui.router', 'satellizer'])
+angular.module('fitnessApp', ['ngResource', 'ui.router', 'satellizer'])
 .config(Router)
 .config(Auth);
 
