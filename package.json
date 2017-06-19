@@ -17,5 +17,13 @@
     "validator": "^6.1.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smodger/sophie-fitness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Smodger/sophie-fitness/issues"
+  },
+  "homepage": "https://github.com/Smodger/sophie-fitness#readme",
   "description": ""
 }

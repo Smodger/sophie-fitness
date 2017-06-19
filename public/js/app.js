@@ -29,6 +29,26 @@ function Router($stateProvider, $urlRouterProvider) {
   templateUrl: '/templates/blogsEdit.html',
   controller: 'BlogsEditController as blogsEdit'
 })
+.state('picturesIndex', {
+  url: '/pictures',
+  templateUrl: '/templates/picturesIndex.html',
+  controller: 'PicturesIndexController as picturesIndex'
+})
+.state('picturesNew', {
+url: '/pictures/new',
+templateUrl: '/templates/picturesNew.html',
+controller: 'PicturesNewController as picturesNew'
+})
+.state('picturesShow', {
+url: '/pictures/:id',
+templateUrl: '/templates/picturesShow.html',
+controller: 'PicturesShowController as picturesShow'
+})
+.state('picturesEdit', {
+url: '/pictures/:id/edit',
+templateUrl: '/templates/picturesEdit.html',
+controller: 'PicturesEditController as picturesEdit'
+})
 .state('login', {
   url: '/login',
   templateUrl: '/templates/login.html',
