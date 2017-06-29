@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const picturesController = require('../controllers/pictures');
+const retreatsController = require('../controllers/retreats');
 const blogsController = require('../controllers/blogs');
 const authController = require('../controllers/auth');
 
@@ -7,14 +7,14 @@ router
   .post('/login', authController.login)
   .post('/register', authController.register);
 
-router.route('/pictures')
-  .get(picturesController.index)
-  .post(picturesController.create);
+router.route('/retreats')
+  .get(retreatsController.index)
+  .post(retreatsController.create);
 
-router.route('/pictures/:id')
-  .get(picturesController.show)
-  .put(picturesController.update)
-  .delete(picturesController.delete);
+router.route('/retreats/:id')
+  .get(retreatsController.show)
+  .put(retreatsController.update)
+  .delete(retreatsController.delete);
 
 router.route('/blogs')
   .get(blogsController.index)

@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Karla|Libre+Baskerville|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/schedule.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js"></script>
@@ -17,11 +15,14 @@
     <script src="https://cdn.jsdelivr.net/satellizer/0.15.5/satellizer.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="/js/app.js" charset="utf-8"></script>
-    <script src="/js/controllers/pictures.js" charset="utf-8"></script>
+    <script src="/js/controllers/retreats.js" charset="utf-8"></script>
     <script src="/js/controllers/blogs.js" charset="utf-8"></script>
     <script src="/js/controllers/auth.js" charset="utf-8"></script>
-    <script src="/js/models/picture.js" charset="utf-8"></script>
+    <script src="/js/models/retreat.js" charset="utf-8"></script>
     <script src="/js/models/blog.js" charset="utf-8"></script>
+    <script src="/js/directives/googleMap.js" charset="utf-8"></script>
+    <script src="/js/directives/googlePlaces.js" charset="utf-8"></script>
+    <script src="/js/services/latlng.js" charset="utf-8"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5p7q8Ryzq-b1m8hPfLttH0nYSQx_hLRk&libraries=places" charset="utf-8"></script>
   </head>
 
@@ -82,7 +83,7 @@
               </a>
             </div>
             <div class="carousel-item">
-              <a ui-sref="events">
+              <a ui-sref="retreatsIndex">
               <img class="d-block img-fluid" src="images/carousel-image2-cropped.jpg" alt="Sixth slide">
               <div class="carousel-caption">
                 <h4>Events & Retreats</h4>
@@ -131,7 +132,7 @@
           <li><a ui-sref="yoga" ui-sref-active="active">Yoga</a></li>
           <li><a ui-sref="fitness" ui-sref-active="active">Fitness & Personal Training</a></li>
           <li><a ui-sref="psychotherapy" ui-sref-active="active">Psycho-Therapy</a></li>
-          <li><a ui-sref="events" ui-sref-active="active">Event & Retreats</a></li>
+          <li><a ui-sref="retreatsIndex" ui-sref-active="active">Event & Retreats</a></li>
           <li><a ui-sref="blogsIndex" ui-sref-active="active">Blogs</a></li>
           <li><a ui-sref="shop" ui-sref-active="active">Shop</a></li>
           <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>

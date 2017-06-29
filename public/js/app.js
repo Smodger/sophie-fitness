@@ -49,6 +49,26 @@ function Router($stateProvider, $urlRouterProvider) {
   templateUrl: '/templates/picturesEdit.html',
   controller: 'PicturesEditController as picturesEdit'
 })
+.state('retreatsIndex', {
+  url: '/retreats',
+  templateUrl: '/templates/retreatsIndex.html',
+  controller: 'RetreatsIndexController as retreatsIndex'
+})
+.state('retreatsNew', {
+  url: '/retreats/new',
+  templateUrl: '/templates/retreatsNew.html',
+  controller: 'RetreatsNewController as retreatsNew'
+})
+.state('retreatsShow', {
+  url: '/retreats/:id',
+  templateUrl: '/templates/retreatsShow.html',
+  controller: 'RetreatsShowController as retreatsShow'
+})
+.state('retreatsEdit', {
+  url: '/retreats/:id/edit',
+  templateUrl: '/templates/retreatsEdit.html',
+  controller: 'RetreatsEditController as retreatsEdit'
+})
 .state('about', {
   url: '/about',
   templateUrl: '/templates/about.html',
@@ -68,11 +88,6 @@ function Router($stateProvider, $urlRouterProvider) {
 .state('psychotherapy', {
   url: '/psychotherapy',
   templateUrl: '/templates/psychotherapy.html',
-})
-.state('events', {
-  url: '/events',
-  templateUrl: '/templates/events.html',
-  controller: 'MainController as main'
 })
 .state('shop', {
   url: '/shop',

@@ -5,9 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mike Hayden <mickyginger@gmail.com> (https://github.com/mickyginger)",
+  "author": "Chris Norman <chrisnorman1988@gmail.com> (https://github.com/smodger)",
   "license": "ISC",
   "dependencies": {
+    "angular-filter": "^0.5.16",
     "bcrypt": "^0.8.7",
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.7",

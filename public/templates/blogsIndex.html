@@ -1,11 +1,13 @@
-<section>
+<section class="container">
   <h1>All Blogs</h1>
-  <ul class="row">
-    <li ng-repeat="blog in blogsIndex.all" class="four columns">
+  <ul>
+    <li ng-repeat="blog in blogsIndex.all" class="blog-container card">
       <a ui-sref="blogsShow({ id: blog._id })">
-        <img ng-src="{{ blog.image }}" class="u-max-full-width">
-        <h2>{{ blog.title }}</h2>
-        <h4>{{ blog.author }}</h4>
+        <img ng-src="{{ blog.image }}" class="card-img-top">
+        <div class="card-block">
+          <h2 class="card-text">{{ blog.title }}</h2>
+          <h4 class="card-text">{{ blog.author }}</h4>
+        </div>
       </a>
     </li>
   </ul>

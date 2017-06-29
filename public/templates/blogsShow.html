@@ -2,6 +2,8 @@
   <img ng-src="{{ blogsShow.blog.image }}">
   <h2>{{ blogsShow.blog.title }}</h2>
   <h4>{{ blogsShow.blog.author }}</h4>
-  <a ui-sref="blogsEdit({ id: blogsShow.blog._id})" >Edit</a>
+  <p>{{ blogsShow.blog.body}}</p>
+  <a ui-sref="blogsIndex"><button type="button" name="button">Back to Blogs</button></a>
+  <a ui-sref="blogsEdit({ id: blogsShow.blog._id})" ><button type="button" name="button">Edit</button></a>
   <button ng-click="blogsShow.delete()">Delete</button>
 </section>
