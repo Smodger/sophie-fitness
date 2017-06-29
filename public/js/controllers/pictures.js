@@ -5,7 +5,6 @@ angular.module('fitnessApp')
 .controller('PicturesEditController', PicturesEditController);
 
 
-
 PicturesIndexController.$inject = ['Picture'];
 function PicturesIndexController(Picture) {
   const picturesIndex = this;

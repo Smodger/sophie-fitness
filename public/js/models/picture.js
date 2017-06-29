@@ -1,4 +1,4 @@
-angular.module('yogaApp')
+angular.module('fitnessApp')
 .factory('Picture', Picture);
 
 Picture.$inject = ['$resource'];

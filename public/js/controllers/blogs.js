@@ -15,7 +15,7 @@ BlogsNewController.$inject = ['Blog', '$state'];
 function BlogsNewController(Blog, $state) {
   const blogsNew = this;
 
-  blogNew.blog = {};
+  blogsNew.blog = {};
 
   function create() {
     blog.save(blogsNew.blog, () => {

@@ -30,24 +30,58 @@ function Router($stateProvider, $urlRouterProvider) {
   controller: 'BlogsEditController as blogsEdit'
 })
 .state('picturesIndex', {
-  url: '/pictures',
-  templateUrl: '/templates/picturesIndex.html',
-  controller: 'PicturesIndexController as picturesIndex'
-})
+    url: '/pictures',
+    templateUrl: '/templates/picturesIndex.html',
+    controller: 'PicturesIndexController as picturesIndex'
+  })
 .state('picturesNew', {
-url: '/pictures/new',
-templateUrl: '/templates/picturesNew.html',
-controller: 'PicturesNewController as picturesNew'
+  url: '/pictures/new',
+  templateUrl: '/templates/picturesNew.html',
+  controller: 'PicturesNewController as picturesNew'
 })
 .state('picturesShow', {
-url: '/pictures/:id',
-templateUrl: '/templates/picturesShow.html',
-controller: 'PicturesShowController as picturesShow'
+  url: '/pictures/:id',
+  templateUrl: '/templates/picturesShow.html',
+  controller: 'PicturesShowController as picturesShow'
 })
 .state('picturesEdit', {
-url: '/pictures/:id/edit',
-templateUrl: '/templates/picturesEdit.html',
-controller: 'PicturesEditController as picturesEdit'
+  url: '/pictures/:id/edit',
+  templateUrl: '/templates/picturesEdit.html',
+  controller: 'PicturesEditController as picturesEdit'
+})
+.state('about', {
+  url: '/about',
+  templateUrl: '/templates/about.html',
+})
+.state('yogaTherapy', {
+  url: '/yogaTherapy',
+  templateUrl: '/templates/yogaTherapy.html',
+})
+.state('yoga', {
+  url: '/yoga',
+  templateUrl: '/templates/yoga.html',
+})
+.state('fitness', {
+  url: '/fitness',
+  templateUrl: '/templates/fitness.html',
+})
+.state('psychotherapy', {
+  url: '/psychotherapy',
+  templateUrl: '/templates/psychotherapy.html',
+})
+.state('events', {
+  url: '/events',
+  templateUrl: '/templates/events.html',
+  controller: 'MainController as main'
+})
+.state('shop', {
+  url: '/shop',
+  templateUrl: '/templates/shop.html',
+  controller: 'MainController as main'
+})
+.state('contact', {
+  url: '/contact',
+  templateUrl: '/templates/contact.html',
 })
 .state('login', {
   url: '/login',
@@ -59,7 +93,7 @@ controller: 'PicturesEditController as picturesEdit'
   templateUrl: '/templates/register.html',
   controller: 'RegisterController as register'
 });
-  $urlRouterProvider.otherwise('/blogs');
+  $urlRouterProvider.otherwise('/');
 }
 
 Auth.$inject = ['$authProvider'];
