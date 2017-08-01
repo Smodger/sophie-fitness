@@ -1,1 +1,105 @@
 <h1>About</h1>
+
+<h4>WHAT WE DO - </h4>
+<p>We’re a soul to soul business with a mission to optimize your mental health.</p>
+<p>We believe that at some point in life we all face our own challenges with mental health. There is no set point of happy or not - for us it’s just a sliding scale.</p>
+<p>Through cutting-edge scientific research and evidence-based methods we use yoga therapy to help make those darker days more manageable. We give you the tools to help turn them around and to make the good times even better!</p>
+<p>Physical health is part of it. We know how easy it is to become disconnected from our bodies and just follow the pack. We want to empower you to reconnect; to recognize, understand, accept and react to what your body is telling you (whilst having a good old stretch and sweat), which will automatically transform mental performance.</p>
+<p>We believe that we all possess the ability promote our own healing - we just want to help show you how with our own natural chill pill.</p>
+
+<div class="image-full">
+  <img src="etc" alt="">
+</div>
+
+<h4>OUR OWN MENTAL HEALTH STORY</h4>
+<p>I’ve always been passionate about health and fitness, but I focused on the physical; personal training and yoga teaching were driven by aesthetic and physical performance goals and the mind never got a look in. But after dealing with mental health challenges myself, from bad depression in my early twenties navigating anxiety at work and stress in my family life, my attitude and mindset changed when I discovered yoga therapy. Training to be a yoga therapist with world leading practitioners at The Minded Institute revealed a medically informed and logical way to manage and improve both physical and mental wellbeing. This is what I want to bring to the wider world.</p>
+
+<div class="image-full">
+  <img src="etc" alt="">
+</div>
+
+<h4>WHY WE NEED TO CHILL – THE BENEFITS</h4>
+<p>We wouldn’t want you to think we’re just another wellness brand trying to flog a new trendy method to try founded by a personal trainer / fitness blogger wannabe. This is so NOT Haleeo. Our approach and methods come from a highly academic level of medical knowledge, professional training and qualifications, and real-life experience in dealing with mental health issues. We follow the latest scientific and medical research to continue to inform and evolve our offering to give you the most up-to-date and proven methods of mind yoga medicine. Proven benefits of our approach are:</p>
+<ul>
+  <li>Increased sense of happiness and well-being</li>
+  <li>Reduced sense of stress and anxiety</li>
+  <li>Increased ability to manage own mental health</li>
+  <li>Strengthened parasympathetic ‘calm’ nervous system</li>
+  <li>Increased connection from mind to body</li>
+  <li>Increased sense of grounding</li>
+  <li>Improved quality and quantity of sleep</li>
+  <li>Enhanced energy, digestion, joint health, circulation, respiration, and endocrine function</li>
+  <li>Restored strength and range of motion</li>
+</ul>
+
+<div class="image-full">
+  <img src="etc" alt="">
+</div>
+
+<h4>‘CHILL PILL’ PROGRAMMES - MENTAL YOGA</h4>
+<p>We don’t do labels or make judgements.In our eyes you’re all awesome and whatever your dealing with we’re here to help and support. Our yoga therapy programs are designed to help reduce anxiety, stress, depression and insomnia but we don’t want to call them that – we prefer:</p>
+<!-- ACCORDION BELOW -->
+<p>Please know we’re all about putting your safety first so it’s important we know your health history in advance of your first class so we can maintain a safe and positive environment for all our haleo family.</p>
+
+<div class="image-full">
+  <img src="etc" alt="">
+</div>
+
+<h4>CORPORATE</h4>
+<h5>WORKSHOPS - TALKS - EVENTS</h5>
+<p>We host educational workshops, talks and events to reframe the conversation on mental health, tackle common issues, promote personal development and introduce specialized techniques to give your staff the tools to stay healthy and happy at work. From high flyers under financial pressure to staff dealing with long hours, difficult people or traumatic and dangerous scenarios we tailor each session to the needs of the group.</p>
+
+<p>For more information please contact the <a href="mailto:hello@haleeoeveryday.com?Subject=Corporate%20Events%20Enquiry">team</a></p>
+
+<div class="image-full">
+  <img src="etc" alt="">
+</div>
+
+<h4>LATEST RESEARCH</h4>
+<p>There have been numerous scientific studies and research papers that have demonstrated the measurable benefits of yoga therapy approaches on the treatment of mental issues in particular stress, depression and anxiety. The below studies are the ones that we feel are most important</p>
+
+<ul>
+  Links to the studies:
+  <li ui-sref="#">link</li>
+  <li ui-sref="#">link</li>
+  <li ui-sref="#">link</li>
+</ul>
+
+<div class="image-full">
+  <img src="etc" alt="">
+</div>
+
+<h4>CONTACT</h4>
+<p>We always want to hear from you! For any queries, questions, enquiries or just because you want to say hi please email us:</p>
+
+<a href="mailto:hello@haleeo.com?Subject=Hello">hello@haleeo.com</a>
+
+<p>We’re all in this together so please share the love and connect with us and each other on our social channels:</p>
+<div class="contact-sm">
+  <ul class="">
+    <li class="no-padding"><a href="#" class="fa fa-facebook"></a></li>
+    <li class="no-padding"><a href="https://twitter.com/sheywoods?lang=en" class="fa fa-twitter"></a></li>
+    <li class="no-padding"><a href="#" class="fa fa-instagram"></a></li>
+    <li class="no-padding"><a href="#" class="fa fa-youtube"></a></li>
+  </ul>
+</div>
+
+<div class="image-full">
+  <img src="etc" alt="">
+</div>
+
+<h4>HALEO DAILY</h4>
+<p>Latest Blog posts from the team / guests bloggers / members of the haleeo community</p>
+<section class="container">
+  <ul>
+    <li ng-repeat="blog in blogsIndex.all | filter:{visible: true} | limitTo: 6" class="blog-container card">
+      <a ui-sref="blogsShow({ id: blog._id })">
+        <img ng-src="{{ blog.image }}" class="card-img-top">
+        <div class="card-block">
+          <h2 class="card-text">{{ blog.title }}</h2>
+          <h4 class="card-text">{{ blog.author }}</h4>
+        </div>
+      </a>
+    </li>
+  </ul>
+</section>

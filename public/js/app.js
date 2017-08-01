@@ -72,6 +72,7 @@ function Router($stateProvider, $urlRouterProvider) {
 .state('about', {
   url: '/about',
   templateUrl: '/templates/about.html',
+  controller: 'BlogsIndexController as blogsIndex'
 })
 .state('yogaTherapy', {
   url: '/yogaTherapy',

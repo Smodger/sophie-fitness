@@ -117,6 +117,16 @@ nav li {
 .fa-youtube:hover, .fa-instagram:hover {
   color: white;
 }
+
+/*contact Social Media*/
+.contact-sm ul {
+  display:inline-block;
+  margin-bottom: 15px;
+}
+
+.contact-sm ul li {
+  display: inline;
+}
 /**/
 
 label {
@@ -148,6 +158,10 @@ li.blog-container {
   width:28%;
   box-shadow: 0 3px 3px 0 #d8d8d8;
   margin: 25px;
+}
+
+.card-text {
+  text-align: center;
 }
 
 .card-img-top {
