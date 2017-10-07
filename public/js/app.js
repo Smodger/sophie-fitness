@@ -95,10 +95,10 @@ function Router($stateProvider, $urlRouterProvider) {
   templateUrl: '/templates/shop.html',
   controller: 'MainController as main'
 })
-.state('contact', {
-  url: '/contact',
-  templateUrl: '/templates/contact.html',
-})
+// .state('contact', {
+//   url: '/contact',
+//   templateUrl: '/templates/contact.html',
+// })
 .state('login', {
   url: '/login',
   templateUrl: '/templates/login.html',
@@ -109,7 +109,7 @@ function Router($stateProvider, $urlRouterProvider) {
   templateUrl: '/templates/register.html',
   controller: 'RegisterController as register'
 });
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/about');
 }
 
 Auth.$inject = ['$authProvider'];
