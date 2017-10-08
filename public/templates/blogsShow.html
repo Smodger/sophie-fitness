@@ -1,9 +1,12 @@
-<section>
-  <img ng-src="{{ blogsShow.blog.image }}">
+<section class="blog-content">
+  <img class="main-image" ng-src="{{ blogsShow.blog.image }}">
   <h2>{{ blogsShow.blog.title }}</h2>
-  <h4>{{ blogsShow.blog.author }}</h4>
-  <p>{{ blogsShow.blog.body}}</p>
-  <a ui-sref="blogsIndex"><button type="button" name="button">Back to Blogs</button></a>
-  <a ui-sref="blogsEdit({ id: blogsShow.blog._id})" ><button type="button" name="button">Edit</button></a>
-  <button ng-click="blogsShow.delete()">Delete</button>
+  <p>Author: {{ blogsShow.blog.author }}</p>
+  <p class="blog-text">{{ blogsShow.blog.body}}</p>
 </section>
+
+<div class="admin-btns">
+  <a class="back-btn" ui-sref="blogsIndex"><button type="button" name="button">Back to Blogs</button></a>
+  <a class="edit-btn" ui-sref="blogsEdit({ id: blogsShow.blog._id})" ><button type="button" name="button">Edit</button></a>
+  <button class="delete-btn" ng-click="blogsShow.delete()">Delete</button>
+</div>

@@ -49,7 +49,7 @@
     </div>
     <div id="collapseOne" class="collapse explanatory-text" role="tabpanel" aria-labelledby="headingOne">
       <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        Helps ease anxiety and calms down your high alert system.
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@
     </div>
     <div id="collapseTwo" class="collapse explanatory-text" role="tabpanel" aria-labelledby="headingTwo">
       <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        Induces relaxation and helps you chill to the max.
       </div>
     </div>
   </div>
@@ -79,7 +79,7 @@
     </div>
     <div id="collapseThree" class="collapse explanatory-text" role="tabpanel" aria-labelledby="headingThree">
       <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        Defeats depression and boost your mindset.
       </div>
     </div>
   </div>
@@ -94,7 +94,7 @@
     </div>
     <div id="collapseFour" class="collapse explanatory-text" role="tabpanel" aria-labelledby="headingFour">
       <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        Helps re-balance and energize either invigorating your energies or helping you really switch off to refuel your strength.
       </div>
     </div>
   </div>
@@ -109,13 +109,12 @@
     </div>
     <div id="collapseFive" class="collapse explanatory-text" role="tabpanel" aria-labelledby="headingFive">
       <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        For non yogis provides an epic sweat + endorphin rush to help you feel awesome and balanced with more mindful relaxation post work-out.
       </div>
     </div>
   </div>
 </div>
 
-  <!-- ACCORDION BELOW -->
   <p>Please know we’re all about putting your safety first so it’s important we know your health history in advance of your first class so we can maintain a safe and positive environment for all our haleo family.</p>
 </div>
 
@@ -169,9 +168,11 @@
 <div class="container" id="haleo-daily">
   <h4>HALEO DAILY</h4>
   <p>Latest Blog posts from the team / guests bloggers / members of the haleeo community</p>
+
+  <p>See all blogs <a ui-sref="blogsIndex">here</a>:</p>
   <section class="division">
-    <ul>
-      <li ng-repeat="blog in blogsIndex.all | limitTo: 6" class="blog-container card">
+    <ul class="home-blog-list">
+      <li ng-repeat="blog in blogsIndex.all | limitTo: 3" class="blog-container card blog-card">
         <a ui-sref="blogsShow({ id: blog._id })">
           <img ng-src="{{ blog.image }}" class="card-img-top">
           <div class="card-block">
