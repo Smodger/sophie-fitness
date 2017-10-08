@@ -19,7 +19,7 @@ function BlogsNewController(Blog, $state) {
 
   function create() {
     Blog.save(blogsNew.blog, () => {
-      $state.go('blogsIndex');
+      $state.go('about');
     });
   }
   blogsNew.create = create;

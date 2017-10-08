@@ -92,6 +92,10 @@ nav li {
   border-radius: 50%;
 }
 
+.chill-list{
+  margin-left: 50px;
+}
+
 .fa:hover {
   opacity: 0.7;
 }
@@ -153,6 +157,37 @@ label {
   margin-left: 50px;
 }
 
+/*Accordion Grid*/
+
+.accordion-grid{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card{
+  border: none;
+}
+/*
+.card-header{
+  background-color: #EEF7FA;
+  border:none;
+  margin-bottom: 5px
+}*/
+
+.card h5 a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #292b2c;
+}
+
+.explanatory-text .card-block{
+  color: #292b2c;
+  background-color: #fbfbfc;
+  font-size: 14px;
+}
+
+/**/
+
 /*Blog Styling*/
 
 li.blog-container {
@@ -166,6 +201,8 @@ li.blog-container {
   box-shadow: 0 3px 3px 0 #d8d8d8;
   margin: 25px;
 }
+
+
 
 .card-text {
   text-align: center;
