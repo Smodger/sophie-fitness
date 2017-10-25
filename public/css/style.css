@@ -184,10 +184,21 @@ label {
   color: #292b2c;
 }
 
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #292b2c;
+}
+
 .explanatory-text .card-block{
   color: #292b2c;
   background-color: #fbfbfc;
   font-size: 14px;
+  text-decoration: none;
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 /**/
@@ -350,3 +361,27 @@ li.blog-container {
 }
 
 /**/
+
+/*Small Screen*/
+@media (min-width:640px) {
+
+  body{
+    line-height: 150%;
+    font-size: 20px;
+  }
+
+  .carousel{
+    display: none!important;
+    /*visibility: hidden!important;*/
+  }
+
+  header.division{
+    min-height: 0;
+  }
+
+  nav{
+    height: 3vh;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}
