@@ -20,46 +20,46 @@ function Router($stateProvider, $urlRouterProvider) {
   templateUrl: '/templates/blogsShow.html',
   controller: 'BlogsShowController as blogsShow'
 })
-.state('landing', {
-  url: '/',
-  templateUrl: '/templates/landing.html'
-})
+// .state('landing', {
+//   url: '/',
+//   templateUrl: '/templates/landing.html'
+// })
 .state('blogsEdit', {
   url: '/blogs/:id/edit',
   templateUrl: '/templates/blogsEdit.html',
   controller: 'BlogsEditController as blogsEdit'
 })
 
-.state('retreatsIndex', {
-  url: '/retreats',
-  templateUrl: '/templates/retreatsIndex.html',
-  controller: 'RetreatsIndexController as retreatsIndex'
-})
-.state('retreatsNew', {
-  url: '/retreats/new',
-  templateUrl: '/templates/retreatsNew.html',
-  controller: 'RetreatsNewController as retreatsNew'
-})
-.state('retreatsShow', {
-  url: '/retreats/:id',
-  templateUrl: '/templates/retreatsShow.html',
-  controller: 'RetreatsShowController as retreatsShow'
-})
-.state('retreatsEdit', {
-  url: '/retreats/:id/edit',
-  templateUrl: '/templates/retreatsEdit.html',
-  controller: 'RetreatsEditController as retreatsEdit'
-})
+// .state('retreatsIndex', {
+//   url: '/retreats',
+//   templateUrl: '/templates/retreatsIndex.html',
+//   controller: 'RetreatsIndexController as retreatsIndex'
+// })
+// .state('retreatsNew', {
+//   url: '/retreats/new',
+//   templateUrl: '/templates/retreatsNew.html',
+//   controller: 'RetreatsNewController as retreatsNew'
+// })
+// .state('retreatsShow', {
+//   url: '/retreats/:id',
+//   templateUrl: '/templates/retreatsShow.html',
+//   controller: 'RetreatsShowController as retreatsShow'
+// })
+// .state('retreatsEdit', {
+//   url: '/retreats/:id/edit',
+//   templateUrl: '/templates/retreatsEdit.html',
+//   controller: 'RetreatsEditController as retreatsEdit'
+// })
 .state('about', {
   url: '/about',
   templateUrl: '/templates/about.html',
   controller: 'BlogsIndexController as blogsIndex'
 })
-.state('shop', {
-  url: '/shop',
-  templateUrl: '/templates/shop.html',
-  controller: 'MainController as main'
-})
+// .state('shop', {
+//   url: '/shop',
+//   templateUrl: '/templates/shop.html',
+//   controller: 'MainController as main'
+// })
 // .state('contact', {
 //   url: '/contact',
 //   templateUrl: '/templates/contact.html',
