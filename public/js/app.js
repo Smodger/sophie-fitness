@@ -20,10 +20,10 @@ function Router($stateProvider, $urlRouterProvider) {
   templateUrl: '/templates/blogsShow.html',
   controller: 'BlogsShowController as blogsShow'
 })
-// .state('landing', {
-//   url: '/',
-//   templateUrl: '/templates/landing.html'
-// })
+.state('landing', {
+  url: '/',
+  templateUrl: '/templates/landing.html'
+})
 .state('blogsEdit', {
   url: '/blogs/:id/edit',
   templateUrl: '/templates/blogsEdit.html',
