@@ -17,4 +17,4 @@ app.use(bodyParser.json());
 app.use(express.static(`${__dirname}/public`));
 app.use(router);
 
-app.listen(port, () => console.log(`Express is listening on port ${port}`), this.address().port, app.settings.env);
+app.listen(port, () => console.log(`Express is listening on port ${port}`));
