@@ -1,3 +1,3 @@
 module.exports = {
-  uri: 'mongodb://localhost/sophie-fitness'
+  uri: process.env.MONGODB_URI || 'mongodb://localhost/sophie-fitness'
 };
