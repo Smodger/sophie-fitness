@@ -61,7 +61,6 @@ function Router($stateProvider, $urlRouterProvider) {
   templateUrl: '/templates/register.html',
   controller: 'RegisterController as register'
 });
-  $urlRouterProvider.otherwise('/#/');
 }
 
 Auth.$inject = ['$authProvider'];
