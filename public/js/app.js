@@ -47,7 +47,7 @@ function Router($stateProvider, $urlRouterProvider) {
 //   controller: 'RetreatsEditController as retreatsEdit'
 // })
 .state('about', {
-  url: '/about',
+  url: '/',
   templateUrl: '/templates/about.html',
   controller: 'BlogsIndexController as blogsIndex'
 })
