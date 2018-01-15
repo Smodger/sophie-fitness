@@ -47,7 +47,7 @@ function Router($stateProvider, $urlRouterProvider) {
 //   controller: 'RetreatsEditController as retreatsEdit'
 // })
 .state('about', {
-  url: '/',
+  url: '/about',
   templateUrl: '/templates/about.html',
   controller: 'BlogsIndexController as blogsIndex'
 })
@@ -61,7 +61,7 @@ function Router($stateProvider, $urlRouterProvider) {
   templateUrl: '/templates/register.html',
   controller: 'RegisterController as register'
 });
-
+  $urlRouterProvider.otherwise('/#/');
 }
 
 Auth.$inject = ['$authProvider'];
