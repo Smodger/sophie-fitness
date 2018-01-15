@@ -46,21 +46,22 @@ function Router($stateProvider, $urlRouterProvider) {
 //   templateUrl: '/templates/retreatsEdit.html',
 //   controller: 'RetreatsEditController as retreatsEdit'
 // })
-  .state('about', {
-    url: '/',
-    templateUrl: '/templates/about.html',
-    controller: 'BlogsIndexController as blogsIndex'
-  })
-  .state('login', {
-    url: '/login',
-    templateUrl: '/templates/login.html',
-    controller: 'LoginController as login'
-  })
-  .state('register', {
-    url: '/register',
-    templateUrl: '/templates/register.html',
-    controller: 'RegisterController as register'
-  });
+.state('about', {
+  url: '/',
+  templateUrl: '/templates/about.html',
+  controller: 'BlogsIndexController as blogsIndex'
+})
+.state('login', {
+  url: '/login',
+  templateUrl: '/templates/login.html',
+  controller: 'LoginController as login'
+})
+.state('register', {
+  url: '/register',
+  templateUrl: '/templates/register.html',
+  controller: 'RegisterController as register'
+});
+
 }
 
 Auth.$inject = ['$authProvider'];
